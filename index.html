@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Fire Restaurant | Where Fire Meets Flavour</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+  <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="white" stroke="#e8600a" stroke-width="2"/>
+    <path d="M50 15 C50 15 65 30 65 45 C65 52 60 56 55 54 C58 48 55 40 50 35 C50 35 52 42 48 48 C44 42 38 36 40 28 C35 34 33 42 36 50 C30 48 28 40 30 32 C24 40 25 52 32 58 C28 62 35 72 50 72 C65 72 72 62 68 58 C75 52 76 40 70 32 C72 40 70 48 64 50 C67 42 65 34 60 28 C62 36 58 42 54 48 C49 44 51 35 50 15Z" fill="url(#fireGrad)"/>
+    <path d="M42 58 C40 52 43 47 47 45 C46 50 48 53 50 55 C52 53 54 50 53 45 C57 47 60 52 58 58 C56 64 53 67 50 67 C47 67 44 64 42 58Z" fill="#ff4400" opacity="0.6"/>
+    <defs>
+      <linearGradient id="fireGrad" x1="50" y1="15" x2="50" y2="72" gradientUnits="userSpaceOnUse">
+        <linearGradient id="fireGrad">
+          <stop offset="0%" stop-color="#FFD700"/>
+          <stop offset="40%" stop-color="#FF6600"/>
+          <stop offset="100%" stop-color="#CC2200"/>
+        </linearGradient>
+      </linearGradient>
+    </defs>
+  </svg>
+  <span>The Fire Restaurant</span>
+</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-logo">
+  <svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="white" stroke="#e8600a" stroke-width="2"/>
+    <path d="M50 12 C50 12 68 30 67 47 C67 55 61 59 56 56 C60 49 57 39 50 33 C50 33 53 42 48 49 C43 41 37 34 40 25 C34 33 32 43 36 52 C29 49 27 39 30 30 C23 40 24 54 32 61 C27 66 34 75 50 75 C66 75 73 66 68 61 C76 54 77 40 70 30 C73 39 71 49 64 52 C68 43 65 33 58 25 C61 34 58 41 54 49 C49 44 52 33 50 12Z" fill="url(#fireGrad2)"/>
+    <path d="M41 60 C39 53 43 47 47 45 C46 51 49 55 50 57 C51 55 54 51 53 45 C57 47 61 53 59 60 C57 67 54 70 50 70 C46 70 43 67 41 60Z" fill="#ff4400" opacity="0.5"/>
+    <defs>
+      <linearGradient id="fireGrad2" x1="50" y1="12" x2="50" y2="75" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#FFE033"/>
+        <stop offset="35%" stop-color="#FF6600"/>
+        <stop offset="100%" stop-color="#CC1100"/>
+      </linearGradient>
+    </defs>
+  </svg>
+  <div class="hero-logo-text">
+    <span class="hero-logo-name">The Fire</span>
+    <span class="hero-logo-sub">RESTAURANT</span>
+  </div>
+</div>
+      <p class="hero-sub">Authentic South African Braai</p>
+      <h1>Where Fire Meets<br/>Flavour</h1>
+      <p class="hero-desc">Flame grilled meat, pap and traditional sides — served fresh, served bold, served anytime.</p>
+      <div class="hero-badges">
+        <span class="badge">🔥 Open 24 Hours</span>
+        <span class="badge">📍 Ferreiras Dorp, Joburg</span>
+        <span class="badge">⭐ Best Meat in the Area</span>
+      </div>
+      <a href="#menu" class="btn-primary">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="highlights">
+    <div class="container">
+      <div class="highlight-card">
+        <div class="highlight-icon">🔥</div>
+        <h3>Flame Grilled</h3>
+        <p>Every cut of meat is braaied over real flames for that authentic smoky flavour you can't get anywhere else.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">🕐</div>
+        <h3>Open 24 Hours</h3>
+        <p>Craving a braai at 2am? We've got you. The Fire Restaurant never closes — come as you are, anytime.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">🇿🇦</div>
+        <h3>Truly South African</h3>
+        <p>From pap and chakalaka to boerewors and chops — we serve the food South Africa grew up loving.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">📍</div>
+        <h3>Heart of Joburg</h3>
+        <p>Centrally located in Ferreiras Dorp, Johannesburg — easy to find, impossible to forget.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What We Serve</p>
+        <h2>Our Menu</h2>
+        <p class="section-desc">Everything is prepared fresh and cooked over real fire. No shortcuts. Just flavour.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" onclick="showCategory('mains')">Mains</button>
+        <button class="tab-btn" onclick="showCategory('sides')">Sides</button>
+        <button class="tab-btn" onclick="showCategory('drinks')">Drinks</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="about-text">
+        <p class="section-tag">Our Story</p>
+        <h2>Born From the Braai</h2>
+        <p>The Fire Restaurant was built on one simple belief — that great food starts with real fire. We're not a franchise. We're not a chain. We're a Johannesburg original, serving the kind of food that brings people together.</p>
+        <p>Every piece of meat that leaves our kitchen has been carefully selected, seasoned and braaied to perfection. Our pap is made fresh. Our sides are made with care. And our doors are always open — because hunger doesn't have a schedule.</p>
+        <p>Whether you're stopping in at noon or midnight, you'll always find a warm fire, a friendly face, and food that hits different.</p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="stat-num">24/7</span>
+            <span class="stat-label">Always Open</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Real Fire</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">#1</span>
+            <span class="stat-label">Meat in the Area</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <div class="about-image-placeholder">
+          <span>🔥</span>
+          <p>Est. Johannesburg</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Find Us</p>
+        <h2>Come Visit Us</h2>
+        <p class="section-desc">We're always open and always ready to serve you something unforgettable.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Location</h3>
+          <p>9 Commissioner St<br/>Ferreiras Dorp<br/>Johannesburg, 2048</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Phone</h3>
+          <p><a href="tel:0848773423">084 877 3423</a></p>
+          <p class="small">Call us anytime — we're always here</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🕐</div>
+          <h3>Hours</h3>
+          <p>Open 24 Hours</p>
+          <p>7 Days a Week</p>
+          <p>365 Days a Year</p>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0!2d28.0436!3d-26.2041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s9+Commissioner+St%2C+Ferreiras+Dorp%2C+Johannesburg!5e0!3m2!1sen!2sza!4v1"
+          width="100%"
+          height="350"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="fire-icon">🔥</span>
+        <span>The Fire Restaurant</span>
+      </div>
+      <p class="footer-tagline">Where Fire Meets Flavour</p>
+      <p class="footer-address">9 Commissioner St, Ferreiras Dorp, Johannesburg | 084 877 3423</p>
+      <p class="footer-copy">© 2026 The Fire Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
