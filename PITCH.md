@@ -1,6 +1,6 @@
 # Client Proposal — The Fire Restaurant Website
 **Prepared by:** Sphelele Mvubu
-**Date:** April 2026
+**Date:** 23 April 2026
 
 ---
 
